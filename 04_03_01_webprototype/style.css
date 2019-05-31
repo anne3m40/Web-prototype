@@ -1,0 +1,545 @@
+/*---------------------------------------------
+1: Variabler og generel styling
+2: Layout og grid
+3: Formular styling
+4: Specifik styling
+5: Media queries
+----------------------------------------------*/
+
+/*---------------------------------------------
+1: Variabler og generel styling
+----------------------------------------------*/
+/*generelt*/
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #faf7f7;
+    margin: 0;
+}
+
+header {
+    background-color: #EA5045;
+    position: fixed;
+    top: 0vw;
+    height: 90px;
+    z-index: 1;
+}
+
+/*generelt slut*/
+
+/*fonte*/
+p,
+h1,
+h2,
+h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+/*fonte slut*/
+
+/*burgermenu*/
+.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 100%;
+}
+
+header nav a {
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 0.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+header nav a:hover {
+    color: #FFB4AA;
+}
+
+
+#menuknap {
+    display: inline-block;
+    position: absolute;
+    color: white;
+    right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .2s;
+    position: absolute;
+    top: 90px;
+    left: 0vw;
+    background-color: #3F3140;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+
+/*burgermenu slut*/
+
+/*---------------------------------------------
+2: Layout og grid
+----------------------------------------------*/
+
+/*forside*/
+#iconer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 90px;
+}
+
+#iconer .frame1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#iconer .materialer {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+
+}
+
+#iconer .skema {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+}
+
+#iconer .notifikationer {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+}
+
+#iconer .frame2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#iconer .techlounge {
+    flex-basis: 200px;
+    flex-grow: 2;
+    width: 30vw;
+}
+
+#iconer .mail {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 60vw;
+}
+
+#iconer .favoritter {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+}
+
+#iconer .grupper {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+}
+
+#iconer .chat {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+}
+
+#iconer .frame3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 900px;
+    flex-grow: 1;
+}
+
+#iconer .frame4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+#iconer .soeg {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+    min-width: 140px;
+}
+
+#iconer .afleveringer {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 30vw;
+    min-width: 140px;
+
+}
+
+#iconer .aktuelt {
+    flex-basis: 200px;
+    flex-grow: 2;
+    width: 60vw;
+    height: 60vw;
+    max-height: 280px;
+}
+
+/*forside slut*/
+/*skema*/
+#top .sectionwrapper {
+    padding-top: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #DEDCDB;
+}
+
+#top .col1 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 40vw;
+}
+
+#top .col2 {
+    flex-basis: 100px;
+    flex-grow: 1;
+    width: 40vw;
+    text-align: end;
+}
+
+#dato .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 130px;
+    padding-right: 130px;
+    justify-content: space-between;
+    background-color: #3F3140;
+}
+
+#fag .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#fag .coltid {
+    flex-basis: 20px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#fag .col {
+    flex-basis: 200px;
+    flex-grow: 4;
+    background-color: #DEDCDB;
+}
+
+/*skema slut*/
+
+/*materialer og opgaver*/
+#materialer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+#materialer .col {
+    flex-basis: 100vw;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+/*---------------------------------------------
+3: Formular styling
+----------------------------------------------*/
+
+/*login*/
+#login label {
+    color: #ea5045;
+    font-size: 1.5rem;
+}
+
+#login a {
+    color: #ea5045;
+}
+
+#login a:hover {
+    color: #F58E81;
+}
+
+.formgroup input {
+    padding: 5px;
+    padding-right: 50px;
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+.formgroup2 input {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+#login {
+    padding: 100px;
+}
+
+/*login slut*/
+
+/*glemt password*/
+#glemtkode label,
+h1 {
+    color: #ea5045;
+    font-size: 1.5rem;
+}
+
+#glemtkode a {
+    color: #ea5045;
+}
+
+#glemtkode a:hover {
+    color: #F58E81;
+}
+
+
+#glemtkode {
+    padding: 100px
+}
+
+#glemtkode .formgroup2 input {
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/*glemt passsword slut*/
+/*---------------------------------------------
+4: Specifik styling
+----------------------------------------------*/
+
+/*header*/
+header .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.headerlogo {
+    height: 15vw;
+    flex-basis: 50px;
+    flex-grow: 2;
+    position: absolute;
+    margin: 14px;
+    ;
+}
+
+.profilicon {
+    background-image: url(img/profil.png);
+    height: 12vw;
+    width: 12vw;
+    flex-basis: 25px;
+    flex-grow: 1;
+    position: absolute;
+    top: 4vw;
+    left: 67vw;
+    background-color: cadetblue;
+}
+
+/*header slut*/
+
+/*index*/
+#top_logo {
+    background-color: #EA5045;
+    height: 250px;
+    ;
+    text-align: center;
+}
+
+#logostor {
+    background-image: url(img/kealogo.png);
+    height: 100px;
+    width: 246px;
+    background-size: 100%;
+    background-position: center, center;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+/*index slut*/
+
+/*Glemt password*/
+p {
+    color: #ea5045;
+}
+
+/*Glemt password slut*/
+
+/*forside*/
+.forsideicon {
+    height: 30vw;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+}
+
+.forsideicon p {
+    color: #F58E81;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.techlounge p {
+    font-size: 2rem;
+}
+
+.aktuelt p {
+    font-size: 2rem;
+    margin-top: 100px;
+}
+
+/*forside slut*/
+
+/*skema*/
+
+#top h3 {
+    color: #3F3140;
+    margin: 16px;
+}
+
+#top p {
+    color: #707070;
+    margin: 16px;
+}
+
+#dato p {
+    margin: 0px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 9px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+#fag .coltid p {
+    color: #DEDCDB;
+}
+
+#fag .col {
+    padding: 5px;
+}
+
+#fag .col .bund {
+    margin-top: 25px;
+}
+
+#fag .col p,
+h3 {
+    color: black;
+    margin: 4px;
+}
+
+#fag .col a {
+    color: #3F3140;
+    font-style: italic;
+}
+
+#fag .col a:hover {
+    color: #EA5045;
+}
+
+/*skema slut*/
+
+/*materialer og opgaver*/
+#materialer .col {
+    background-color: #DEDCDB;
+    padding: 5px;
+}
+
+#materialer p {
+    color: black;
+    font-size: 0.8rem;
+}
+
+#materialer h3:hover {
+    color: #ea5045;
+    cursor: pointer;
+}
+
+#materialer a:hover {
+    color: #ea5045;
+}
+
+#materialer a {
+    color: black;
+}
+
+/*materialer og opgaver slut*/
+
+/*---------------------------------------------
+5: Media Queries
+----------------------------------------------*/
+
+@media only screen and (min-width: 500px) {
+
+    body,
+    header,
+    section,
+    sectionwrapper {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .forsideicon {
+        height: 130px;
+    }
+
+}
